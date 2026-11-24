@@ -98,3 +98,96 @@ a:focus-visible {
         padding: 10px;
     }
 }
+
+/* Системна інформація */
+#storageInfo {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+/* Коментарі */
+#reviews {
+    grid-column: 1 / -1;
+}
+
+.comment-card {
+    background: #f2f4f3;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 4px solid #285943;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.comment-email {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Кнопки */
+button {
+    background: #285943;
+    color: white;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #39785c;
+}
+
+/* Модальне вікно */
+dialog {
+    width: 400px;
+    max-width: 90%;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+/* Нічна тема */
+body.dark-mode {
+    background: #18201d;
+    color: #eeeeee;
+}
+
+.dark-mode .card,
+.dark-mode .footer,
+.dark-mode #storageInfo,
+.dark-mode .comment-card,
+.dark-mode dialog {
+    background: #293830;
+    color: #eeeeee;
+    border-color: #52645a;
+}
+
+.dark-mode h2,
+.dark-mode a,
+.dark-mode .comment-email {
+    color: #a7e3bc;
+}

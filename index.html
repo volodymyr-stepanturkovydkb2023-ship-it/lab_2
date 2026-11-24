@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV | Турковид Володимир</title>
-
     <link rel="stylesheet" href="styles.css">
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -18,14 +16,19 @@
         <h1>Турковид Володимир</h1>
         <p>Студент | Кібербезпека | КБ-402</p>
         <p style="font-size: 14px;">
-            Лабораторна робота №3 — Варіант 15
+            Лабораторна робота №4 — Варіант 15
         </p>
+
+        <button id="themeToggle" type="button">
+            Змінити тему
+        </button>
 
         <nav>
             <a href="#profile">Профіль</a>
             <a href="#education">Освіта</a>
             <a href="#skills">Навички</a>
             <a href="#projects">Проєкти</a>
+            <a href="#reviews">Відгуки</a>
         </nav>
     </header>
 
@@ -49,8 +52,8 @@
             <h2>Технічні навички</h2>
             <ul>
                 <li>HTML та JavaScript</li>
-                <li>CSS та адаптивний дизайн</li>
-                <li>Основи інформаційної безпеки</li>
+                <li>CSS та Tailwind CSS</li>
+                <li>Інформаційна безпека</li>
                 <li>Git та GitHub</li>
                 <li>Visual Studio Code</li>
                 <li>PowerShell</li>
@@ -59,23 +62,62 @@
 
         <section id="projects" class="card">
             <h2>Практичний досвід</h2>
-            <article>
-                <h3>Навчальні проєкти</h3>
-                <ol>
-                    <li>Аналіз безпеки вебресурсів.</li>
-                    <li>Створення HTML-резюме.</li>
-                    <li>Розробка компонентів React.</li>
-                    <li>Стилізація сторінок за допомогою CSS.</li>
-                </ol>
-            </article>
+            <ol>
+                <li>Аналіз безпеки вебресурсів.</li>
+                <li>Створення HTML-резюме.</li>
+                <li>Розробка компонентів React.</li>
+                <li>Стилізація сторінок за допомогою CSS.</li>
+                <li>Робота з JavaScript та API.</li>
+            </ol>
+        </section>
+
+        <section id="reviews" class="card">
+            <h2>Коментарі попередніх роботодавців</h2>
+            <p>Навчальні відгуки з JSONPlaceholder.</p>
+            <div id="comments" aria-live="polite">
+                Завантаження коментарів...
+            </div>
         </section>
     </main>
 
     <footer class="footer">
         <h2>Додаткова інформація</h2>
-        <p>Місто: Львів, Україна</p>
-        <p>2026 — Турковид Володимир</p>
+        <p>Львів, Україна</p>
+        <p>© 2026 Турковид Володимир</p>
+
+        <h2>Системна інформація LocalStorage</h2>
+        <pre id="storageInfo"></pre>
+
         <a href="#">Повернутися на початок</a>
     </footer>
+
+    <dialog id="contactModal">
+        <h2>Форма зворотного зв'язку</h2>
+
+        <button id="closeModal" type="button">
+            Закрити
+        </button>
+
+        <form id="contactForm"
+              action="https://formspree.io/f/mppdkzqv"
+              method="POST">
+
+            <label>Ім'я</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Номер телефону</label>
+            <input type="tel" name="phone" required>
+
+            <label>Повідомлення</label>
+            <textarea name="message" rows="4" required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
 </html>
