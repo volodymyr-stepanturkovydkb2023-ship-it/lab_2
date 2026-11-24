@@ -1,16 +1,21 @@
 export default function Header() {
     return (
-        <header className="hero">
-            <p>CYBERSECURITY | PORTFOLIO</p>
-            <h1>Турковид Володимир</h1>
-            <p>Студент групи КБ-402</p>
-            <p>Лабораторна №2 — Варіант 15</p>
+        <header className="rounded-lg bg-emerald-800 p-6 text-white shadow-sm">
+            <h1 className="text-3xl font-bold">
+                Турковид Володимир
+            </h1>
 
-            <nav>
-                <a href="#profile">Профіль</a>
-                <a href="#education">Освіта</a>
-                <a href="#skills">Навички</a>
-                <a href="#projects">Проєкти</a>
+            <p className="mt-3">Студент | Кібербезпека | КБ-402</p>
+
+            <p className="mt-2 text-sm text-emerald-100">
+                Лабораторна робота №3 — Варіант 15
+            </p>
+
+            <nav className="mt-5 flex flex-wrap gap-4">
+                <a href="#profile" className="hover:underline">Профіль</a>
+                <a href="#education" className="hover:underline">Освіта</a>
+                <a href="#skills" className="hover:underline">Навички</a>
+                <a href="#projects" className="hover:underline">Проєкти</a>
             </nav>
         </header>
     );

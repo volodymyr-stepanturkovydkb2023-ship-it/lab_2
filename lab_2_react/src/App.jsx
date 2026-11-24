@@ -4,21 +4,22 @@ import Education from './components/Education.jsx';
 import Skills from './components/Skills.jsx';
 import Experience from './components/Experience.jsx';
 import Footer from './components/Footer.jsx';
-import './App.css';
 
 export default function App() {
     return (
-        <div className="portfolio">
-            <Header />
+        <div className="min-h-screen bg-gray-100 p-4">
+            <div className="mx-auto max-w-5xl">
+                <Header />
 
-            <main className="content">
-                <About />
-                <Education />
-                <Skills />
-                <Experience />
-            </main>
+                <main className="mt-5 grid gap-5 md:grid-cols-2">
+                    <About />
+                    <Education />
+                    <Skills />
+                    <Experience />
+                </main>
 
-            <Footer />
+                <Footer />
+            </div>
         </div>
     );
 }

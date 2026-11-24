@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV | Турковид Володимир</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Турковид Володимир</h1>
         <p>Студент | Кібербезпека | КБ-402</p>
-        <p>Лабораторна робота №2 — Варіант 15</p>
-        <hr>
+        <p style="font-size: 14px;">
+            Лабораторна робота №3 — Варіант 15
+        </p>
+
         <nav>
-            <a href="#profile">Профіль</a> |
-            <a href="#education">Освіта</a> |
-            <a href="#skills">Навички</a> |
+            <a href="#profile">Профіль</a>
+            <a href="#education">Освіта</a>
+            <a href="#skills">Навички</a>
             <a href="#projects">Проєкти</a>
         </nav>
     </header>
 
-    <main>
-        <section id="profile">
+    <main class="content">
+        <section id="profile" class="card">
             <h2>Особистий профіль</h2>
             <p>Навчаюся у Львівській політехніці.
                 Цікавлюся інформаційною безпекою,
                 програмуванням та вебтехнологіями.</p>
         </section>
 
-        <hr>
-
-        <section id="education">
+        <section id="education" class="card">
             <h2>Освіта</h2>
             <p><strong>НУ «Львівська політехніка»</strong></p>
             <p>Спеціальність: Кібербезпека</p>
@@ -37,37 +45,33 @@
             <a href="https://lpnu.ua/">Сайт університету</a>
         </section>
 
-        <hr>
-
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Технічні навички</h2>
             <ul>
-                <li>Основи HTML та JavaScript</li>
+                <li>HTML та JavaScript</li>
+                <li>CSS та адаптивний дизайн</li>
                 <li>Основи інформаційної безпеки</li>
-                <li>Робота з Git та GitHub</li>
+                <li>Git та GitHub</li>
                 <li>Visual Studio Code</li>
-                <li>Робота з PowerShell</li>
+                <li>PowerShell</li>
             </ul>
         </section>
 
-        <hr>
-
-        <section id="projects">
+        <section id="projects" class="card">
             <h2>Практичний досвід</h2>
             <article>
                 <h3>Навчальні проєкти</h3>
                 <ol>
                     <li>Аналіз безпеки вебресурсів.</li>
-                    <li>Створення персонального HTML-резюме.</li>
-                    <li>Вивчення компонентної архітектури React.</li>
+                    <li>Створення HTML-резюме.</li>
+                    <li>Розробка компонентів React.</li>
+                    <li>Стилізація сторінок за допомогою CSS.</li>
                 </ol>
             </article>
         </section>
     </main>
 
-    <hr>
-
-    <footer>
+    <footer class="footer">
         <h2>Додаткова інформація</h2>
         <p>Місто: Львів, Україна</p>
         <p>2026 — Турковид Володимир</p>
