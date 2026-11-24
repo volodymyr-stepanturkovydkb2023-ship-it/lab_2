@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.hero {
+    background: #e3eef7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #234e70;
+}
+
+h2 {
+    color: #234e70;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #234e70;
+}
+
+.card {
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3eef7;
+}
